@@ -107,3 +107,36 @@ a {
 }
 
 body{font-family:'Plus Jakarta Sans Regular','Helvetica Neue','Helvetica', 'Arial',sans-serif;text-rendering:optimizeLegibility;overflow-x:hidden;line-height:1.75;}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
+
+::view-transition-old(root) {
+  animation-name: scaleIn;
+}
+
+::view-transition-new(root){
+  animation-name: scaleOut;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
