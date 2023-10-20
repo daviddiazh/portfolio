@@ -105,3 +105,5 @@ a {
     color-scheme: dark;
   }
 }
+
+body{font-family:'Plus Jakarta Sans Regular','Helvetica Neue','Helvetica', 'Arial',sans-serif;text-rendering:optimizeLegibility;overflow-x:hidden;line-height:1.75;}
