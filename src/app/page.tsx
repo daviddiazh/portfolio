@@ -1,6 +1,7 @@
 'use client';
 
 import { useViewTransitions } from '@/hooks/useViewTransitions';
+import PresentationHome from '@/modules/PresentationHome';
 import styles from './page.module.css'
 
 export default function Home() {
@@ -9,6 +10,8 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <PresentationHome />
+
       <p onClick={() => navigate('/projects')}>
         Proyectos
       </p>
