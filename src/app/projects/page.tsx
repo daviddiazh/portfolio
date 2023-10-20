@@ -1,25 +1,15 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import React from 'react'
+import { useViewTransitions } from '@/hooks/useViewTransitions';
 
 export default function Projects () {
 
-  const router = useRouter();
-
-  const navigate = () => {
-    if (!document?.startViewTransition) {
-      return router.push('/');
-    }
-    document?.startViewTransition(() => {
-      router.push('/');
-    })
-  }
+  const {navigate} = useViewTransitions();
 
   return (
     <div style={{height: '100vh'}}>
         <h1>Proyectos</h1>
-        <p onClick={navigate}>
+        <p onClick={() => navigate('/')}>
           Volver
         </p>
     </div>
