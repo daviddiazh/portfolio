@@ -1,0 +1,57 @@
+/* ----------------- Mobile Started ----------------- */
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.links_container {
+    display: flex;
+    gap: 10px;
+}
+
+.title {
+    font-size: 20px;
+}
+/* ----------------- Mobile Ended ----------------- */
+
+
+/* ----------------- Tablet or Desktop Started ----------------- */
+@media (min-width: 495px) {
+    .main_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 70px;
+    }
+    
+    .links_container {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .title {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .link {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 15px;
+    }
+
+    .link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 8px 15px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* ----------------- Tablet or Desktop Ended ----------------- */

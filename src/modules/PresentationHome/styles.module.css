@@ -1,0 +1,49 @@
+.main_container {
+    height: min(100% - 65px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.avatar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display_line {
+    background-image: url(../../assets/images/display-line.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    background-size: contain;
+    padding-bottom: 5px;
+}
+
+/* ----------------- Tablet or Desktop Started ----------------- */
+@media (min-width: 495px) {
+    .main_container {
+        height: min(100% - 142.5px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 165px;
+    }
+
+    .button {
+        padding: 20px 35px;
+        border-radius: 100px;
+        background-color: #fff;
+        color: #666;
+        font-size: 20px;
+        border: none;
+    }
+}
