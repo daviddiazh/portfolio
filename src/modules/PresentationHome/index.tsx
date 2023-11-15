@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import { Navbar } from "@/components/Navbar";
 import Avatar from '@/assets/images/ddh-img.png';
+import GitHub from '@/assets/images/github.svg';
 import styles from './styles.module.css';
 
 export default function PresentationHome () {
@@ -95,6 +96,10 @@ export default function PresentationHome () {
               Conecta conmigo
             </button>
           </div>
+
+          {/* <div style={{marginTop: 150, border: '0.1px solid rgba(255, 255, 255, 0.2)'}} />
+          <a style={{color: '#fff', width: 25}} href=''><Image src={GitHub} alt="Avatar image" width={25} /></a> */}
+
         </div>
       </div>
     </div>
