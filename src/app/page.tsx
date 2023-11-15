@@ -12,9 +12,9 @@ export default function Home() {
     <main className={styles.main}>
       <PresentationHome />
 
-      <p onClick={() => navigate('/projects')}>
+      {/* <p onClick={() => navigate('/projects')}>
         Proyectos
-      </p>
+      </p> */}
     </main>
   )
 }
