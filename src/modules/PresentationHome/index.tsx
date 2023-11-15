@@ -2,6 +2,7 @@
 'use client';
 
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
 import { Navbar } from "@/components/Navbar";
 import Avatar from '@/assets/images/ddh-img.png';
 import styles from './styles.module.css';
@@ -18,7 +19,27 @@ export default function PresentationHome () {
             <Image src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
           </div>
 
-          <p className={styles.hello}>Hey, soy David.</p>
+          {/* <p className={styles.hello}>Hey, soy David</p> */}
+          <p className={styles.hello}>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString('Hey, soy David')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('de Medellin')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('Colombia')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+              component='span'
+              options={{
+                loop: true,
+              }}
+            />
+          </p>
           <div className={styles.text1_container}>
             <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> productos de software con un gran <span className={styles.display_line}> impacto social.</span></p>
           </div>
@@ -40,7 +61,27 @@ export default function PresentationHome () {
             <Image src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
           </div>
 
-          <p className={styles.hello}>Hey, soy David.</p>
+          {/* <p className={styles.hello}>Hey, soy David.</p> */}
+          <p className={styles.hello}>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString('Hey, soy David')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('de Medellin')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString('Colombia')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+              component='span'
+              options={{
+                loop: true,
+              }}
+            />
+          </p>
           <div className={styles.text1_container}>
             <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> productos de software con un gran <span className={styles.display_line}> impacto social.</span></p>
           </div>
