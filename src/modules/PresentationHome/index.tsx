@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import { Navbar } from "@/components/Navbar";
 import Avatar from '@/assets/images/ddh-img.png';
-import GitHub from '@/assets/images/github.svg';
 import styles from './styles.module.css';
 
 export default function PresentationHome () {
@@ -84,11 +83,11 @@ export default function PresentationHome () {
             />
           </p>
           <div className={styles.text1_container}>
-            <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> productos de software con un gran <span className={styles.display_line}> impacto social.</span></p>
+            <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> software de calidad con un gran <span className={styles.display_line}> impacto social.</span></p>
           </div>
 
           <div style={{width: 720, paddingTop: 35}}>
-            <p style={{textAlign: 'center', fontSize: 20, fontWeight: 400, lineHeight: 1.6}}>Desarrollador de Software FullStack. Especializado en Desarrollo Web y Móvil.</p>
+            <p style={{textAlign: 'center', fontSize: 20, fontWeight: 400, lineHeight: 1.6}}>Desarrollador de Software FullStack, especializado en Desarrollo Web y Móvil.</p>
           </div>
 
           <div className={styles.avatar_container} style={{paddingTop: 35}}>
