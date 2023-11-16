@@ -2,6 +2,7 @@
 
 import PresentationHome from '@/modules/PresentationHome';
 import styles from './page.module.css'
+import { Projects } from '@/modules/Projects';
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
 
       <PresentationHome />
 
+      {/* <Projects /> */}
       
     </main>
   )
