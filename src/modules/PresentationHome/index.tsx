@@ -26,7 +26,7 @@ export default function PresentationHome () {
                 typewriter.typeString('Hey, soy David')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('de Medellin')
+                  .typeString('de Medellín')
                   .pauseFor(2000)
                   .deleteAll()
                   .typeString('Colombia')
@@ -45,7 +45,7 @@ export default function PresentationHome () {
           </div>
 
           <div className={styles.text2_container}>
-            <p className={styles.text2_description}>Desarrollador de Software FullStack. Especializado en Desarrollo Web y Móvil.</p>
+            <p className={styles.text2_description}>Desarrollador de Software FullStack autodidacta. Especializado en Desarrollo Web y Móvil.</p>
           </div>
 
           <div className={styles.avatar_container} style={{paddingTop: 35}}>
@@ -68,7 +68,7 @@ export default function PresentationHome () {
                 typewriter.typeString('Hey, soy David')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('de Medellin')
+                  .typeString('de Medellín')
                   .pauseFor(2000)
                   .deleteAll()
                   .typeString('Colombia')
@@ -86,8 +86,8 @@ export default function PresentationHome () {
             <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> software de calidad con un gran <span className={styles.display_line}> impacto social.</span></p>
           </div>
 
-          <div style={{width: 720, paddingTop: 35}}>
-            <p style={{textAlign: 'center', fontSize: 20, fontWeight: 400, lineHeight: 1.6}}>Desarrollador de Software FullStack, especializado en Desarrollo Web y Móvil.</p>
+          <div className={styles.text2_container}>
+            <p className={styles.text2_description}>Desarrollador de Software FullStack autodidacta, especializado en Desarrollo Web y Móvil.</p>
           </div>
 
           <div className={styles.avatar_container} style={{paddingTop: 35}}>

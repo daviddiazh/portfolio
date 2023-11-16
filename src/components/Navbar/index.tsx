@@ -6,7 +6,7 @@ export const Navbar = () => {
 
   return (
     <div className={styles.main_container}>
-      <Link href='/'><h1 className={styles.title}>David Diaz H.</h1></Link>
+      <Link href='/'><h1 className={styles.title}>David Diaz.</h1></Link>
 
       <div className={styles.links_container}>
         {/* <a className={styles.link} onClick={() => navigate('/about')}>Sobre mi</a> */}
