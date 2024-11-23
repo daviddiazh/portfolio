@@ -9,6 +9,7 @@
 
 .title {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .links_container {
@@ -34,7 +35,7 @@
 /* ----------------- Mobile Ended ----------------- */
 
 
-@media (max-width: 725px) {
+@media (max-width: 730px) {
     .links_container {
         display: none;
     }
