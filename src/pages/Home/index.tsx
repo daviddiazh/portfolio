@@ -1,25 +1,19 @@
-/* eslint-disable react/no-unescaped-entities */
-'use client';
-
-import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-import { Navbar } from "@/components/Navbar";
-import Avatar from '@/assets/images/ddh-img.png';
-import styles from './styles.module.css';
+import Avatar from '../../assets/images/ddh-img.png';
+import styles from './styles.module.css'
+import { Link } from 'react-router-dom';
 
-export default function PresentationHome () {
+export default function Home() {
 
   return (
-    <div style={{height: '100vh', width: '100%'}}>
-      <Navbar />
+    <main className={styles.main}>
 
       <div className={styles.main_container}>
         <div className={styles.only_mobile}>
           <div className={styles.avatar_container}>
-            <Image src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
+            <img src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
           </div>
 
-          {/* <p className={styles.hello}>Hey, soy David</p> */}
           <p className={styles.hello}>
             <Typewriter
               onInit={(typewriter) => {
@@ -41,27 +35,32 @@ export default function PresentationHome () {
             />
           </p>
           <div className={styles.text1_container}>
-            <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> productos de software con un gran <span className={styles.display_line}> impacto social.</span></p>
+            <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> productos de software generando un gran <span className={styles.display_line}> impacto social.</span></p>
           </div>
 
           <div className={styles.text2_container}>
             <p className={styles.text2_description}>Desarrollador de Software FullStack autodidacta. Especializado en Desarrollo Web y Móvil.</p>
           </div>
 
-          <div className={styles.avatar_container} style={{paddingTop: 35}}>
-            <button className={styles.button}>
-              Conecta conmigo
-            </button>
+          <div className={styles.buttonsContainer}>
+            <Link to='/projects' className={styles.avatar_container}>
+              <button className={styles['contact-button']}>
+                Ver proyectos
+              </button>
+            </Link>
+
+            <a href="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank' className={styles.avatar_container}>
+              <button className={styles['project-button']}>Conecta conmigo</button>
+            </a>
           </div>
         </div>
 
 
         <div className={styles.only_desktop}>
           <div className={styles.avatar_container}>
-            <Image src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
+            <img src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
           </div>
 
-          {/* <p className={styles.hello}>Hey, soy David.</p> */}
           <p className={styles.hello}>
             <Typewriter
               onInit={(typewriter) => {
@@ -83,24 +82,26 @@ export default function PresentationHome () {
             />
           </p>
           <div className={styles.text1_container}>
-            <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> software de calidad con un gran <span className={styles.display_line}> impacto social.</span></p>
+            <p className={styles.text1_description}><span className={styles.display_line}>Construyendo</span> software de calidad generando un gran <span className={styles.display_line}> impacto social.</span></p>
           </div>
 
           <div className={styles.text2_container}>
             <p className={styles.text2_description}>Desarrollador de Software FullStack autodidacta, especializado en Desarrollo Web y Móvil.</p>
           </div>
 
-          <div className={styles.avatar_container} style={{paddingTop: 35}}>
-            <button className={styles.button}>
-              Conecta conmigo
-            </button>
+          <div className={styles.buttonsContainer}>
+            <a href="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank' className={styles.avatar_container}>
+              <button className={styles['project-button']}>Conecta conmigo</button>
+            </a>
+
+            <Link to='/projects' className={styles.avatar_container}>
+              <button className={styles['contact-button']}>
+                Ver proyectos
+              </button>
+            </Link>
           </div>
-
-          {/* <div style={{marginTop: 150, border: '0.1px solid rgba(255, 255, 255, 0.2)'}} />
-          <a style={{color: '#fff', width: 25}} href=''><Image src={GitHub} alt="Avatar image" width={25} /></a> */}
-
         </div>
       </div>
-    </div>
+    </main>
   )
 }
