@@ -1,5 +1,6 @@
 .main_container {
-  height: min(100vh - 65px);
+  /* height: min(100vh - 65px); */
+  height: min(100vh - 100px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@
 }
 
 .avatar {
-  width: 130px;
+  width: 115px;
 }
 
 .avatar_container {
