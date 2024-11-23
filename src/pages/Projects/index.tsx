@@ -7,7 +7,7 @@ export default function Projects () {
 
       <h2 className={styles.title}>Algunos proyectos <span style={{color: '#4282ad'}}> hechos por David</span></h2>
       {/* <h2 className={styles.title}>Algunos proyectos hechos por David</h2> */}
-      <p>Estos son algunos de las aplicaciones móviles y web que he desarrollado...</p>
+      <p className={styles.description}>Estos son algunos de las aplicaciones móviles y web que he desarrollado...</p>
 
       <div className={styles['grid-container']}>
         {

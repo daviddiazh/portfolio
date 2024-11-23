@@ -8,7 +8,15 @@
 
 .title {
     text-align: left;
-    font-size: 29px;
+    font-size: 33px;
+    line-height: 33px;
+    margin-top: 20px;
+}
+
+.description {
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 .grid-container {
@@ -16,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
     grid-gap: 30px;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 100px;
 }
 
@@ -48,12 +56,19 @@
 }
 
 @media (min-width: 495px) {
+    .title {
+        text-align: left;
+        font-size: 29px;
+        margin-top: 0;
+    }
+
     .main_container {
         padding: 0;
     }
 
     .grid-container {
         grid-gap: 50px;
+        margin-top: 60px;
     }
       
     .image {
