@@ -13,7 +13,7 @@ export const Navbar = () => {
   return (
     <>
       <div className={styles.main_container}>
-        <Link onClick={toggleMenu} to='/'><h1 className={styles.title}>David Diaz.</h1></Link>
+        <Link onClick={() => setOpenMenu(false)} to='/'><h1 className={styles.title}>David Diaz.</h1></Link>
 
         <div className={styles.links_container}>
           <Link className={styles.link} to='/'>Inicio</Link>
