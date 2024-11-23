@@ -1,39 +1,26 @@
+import { projects } from '../../data';
 import styles from './styles.module.css';
-
-import portadatest from '../../assets/mockups/test.jpg';
-import portadatest2 from '../../assets/mockups/test2.jpg';
 
 export default function Projects () {
   return (
     <div className={styles.main_container}>
 
-      <h2 className={styles.title}>Proyectos</h2>
+      <h2 className={styles.title}>Algunos proyectos <span style={{color: '#4282ad'}}> hechos por David</span></h2>
+      {/* <h2 className={styles.title}>Algunos proyectos hechos por David</h2> */}
       <p>Estos son algunos de las aplicaciones móviles y web que he desarrollado...</p>
 
       <div className={styles['grid-container']}>
-        <div className={styles.card}>
-          <img src={portadatest} alt="" className={styles.image} width='100%' />
-          <h4>Clon de Mercado Libre</h4>
-          <p>Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.</p>
-        </div>
-
-        <div className={styles.card}>
-          <img src={portadatest2} alt="" className={styles.image} width='100%' />
-          <h4>Clon de Mercado Libre</h4>
-          <p>Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.</p>
-        </div>
-
-        <div className={styles.card}>
-          <img src={portadatest} alt="" className={styles.image} width='100%' />
-          <h4>Clon de Mercado Libre</h4>
-          <p>Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.</p>
-        </div>
-        
-        <div className={styles.card}>
-          <img src={portadatest} alt="" className={styles.image} width='100%' />
-          <h4>Clon de Mercado Libre</h4>
-          <p>Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.</p>
-        </div>
+        {
+          projects.map(project => (
+            <div className={styles.card} key={project.id}>
+              <img src={project.image} alt={project.name} className={styles.image} width='100%' />
+              <div className={styles['content-card']}>
+                <h4 className={styles.name}>{project.name}</h4>
+                <p className={styles.description}>{project.description}</p>
+              </div>
+            </div>
+          ))
+        }
       </div>
     </div>
   )
