@@ -1,25 +1,19 @@
-'use client'
-
-import Image from 'next/image';
-import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
-import { Navbar } from "@/components/Navbar";
-import Avatar from '@/assets/images/ddh-img.png';
-import styles from './page.module.css'
+import Avatar from '../../assets/images/ddh-img.png';
+import styles from './styles.module.css'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Navbar />
 
       <div className={styles.main_container}>
         <div className={styles.only_mobile}>
           <div className={styles.avatar_container}>
-            <Image src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
+            <img src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
           </div>
 
-          {/* <p className={styles.hello}>Hey, soy David</p> */}
           <p className={styles.hello}>
             <Typewriter
               onInit={(typewriter) => {
@@ -49,7 +43,7 @@ export default function Home() {
           </div>
 
           <div className={styles.buttonsContainer}>
-            <Link href='/projects' className={styles.avatar_container}>
+            <Link to='/projects' className={styles.avatar_container}>
               <button className={styles['contact-button']}>
                 Ver proyectos
               </button>
@@ -64,7 +58,7 @@ export default function Home() {
 
         <div className={styles.only_desktop}>
           <div className={styles.avatar_container}>
-            <Image src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
+            <img src={Avatar} alt="Avatar image" width={165} className={styles.avatar} />
           </div>
 
           <p className={styles.hello}>
@@ -100,7 +94,7 @@ export default function Home() {
               <button className={styles['project-button']}>Conecta conmigo</button>
             </a>
 
-            <Link href='/projects' className={styles.avatar_container}>
+            <Link to='/projects' className={styles.avatar_container}>
               <button className={styles['contact-button']}>
                 Ver proyectos
               </button>

@@ -3,7 +3,7 @@
     /* height: 100%; */
     height: min(100% - 65px);
     overflow: scroll;
-    padding: 0 25px;
+    padding: 0;
 }
 
 .title {
@@ -13,13 +13,13 @@
 .grid-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
     grid-gap: 60px;
 }
 
 @media (min-width: 495px) {
     .main_container {
-        padding: 0 70px;
+        padding: 0;
     }
 
     .card {
@@ -38,7 +38,7 @@
     .grid-container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem)));
         grid-gap: 60px;
     }
 }

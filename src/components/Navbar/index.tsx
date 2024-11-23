@@ -1,11 +1,8 @@
-'use client'
-
-import React, { useState } from 'react'
-import Link from 'next/link';
-import Image from 'next/image';
+import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import openMenuIcon from '../../assets/icons/open-menu.svg';
+import closeMenuIcon from '../../assets/icons/close-menu.svg';
 import styles from './styles.module.css';
-import openMenuIcon from '@/assets/icons/open-menu.svg';
-import closeMenuIcon from '@/assets/icons/close-menu.svg';
 
 export const Navbar = () => {
 
@@ -16,18 +13,18 @@ export const Navbar = () => {
   return (
     <>
       <div className={styles.main_container}>
-        <Link href='/'><h1 className={styles.title}>David Diaz.</h1></Link>
+        <Link to='/'><h1 className={styles.title}>David Diaz.</h1></Link>
 
         <div className={styles.links_container}>
-          <Link className={styles.link} href='/'>Inicio</Link>
-          <Link className={styles.link} href='/projects'>Proyectos</Link>
-          <Link className={styles.link} href="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>Contácto</Link>
+          <Link className={styles.link} to='/'>Inicio</Link>
+          <Link className={styles.link} to='/projects'>Proyectos</Link>
+          <Link className={styles.link} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>Contácto</Link>
         </div>
 
         {
           isOpenMenu
-          ? <Image src={closeMenuIcon} alt="Cerrar menu, icono" className={styles.close_menu_icon} onClick={toggleMenu} />
-          : <Image src={openMenuIcon} alt="Abrir menu, icono" className={styles.open_menu_icon} onClick={toggleMenu} />
+          ? <img src={closeMenuIcon} alt="Cerrar menu, icono" className={styles.close_menu_icon} onClick={toggleMenu} />
+          : <img src={openMenuIcon} alt="Abrir menu, icono" className={styles.open_menu_icon} onClick={toggleMenu} />
         }
       </div>
       <div>
@@ -35,9 +32,9 @@ export const Navbar = () => {
           isOpenMenu
           ? (
             <div className={styles.links_container_mobile}>
-              <Link className={styles.link_mobile} href='/'>Inicio</Link>
-              <Link className={styles.link_mobile} href='/projects'>Proyectos</Link>
-              <Link className={styles.link_mobile} href="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>Contácto</Link>
+              <Link onClick={toggleMenu} className={styles.link_mobile} to='/'>Inicio</Link>
+              <Link onClick={toggleMenu} className={styles.link_mobile} to='/projects'>Proyectos</Link>
+              <Link onClick={toggleMenu} className={styles.link_mobile} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>Contácto</Link>
             </div>
           ) : null
         }
