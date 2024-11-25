@@ -50,7 +50,7 @@ export default function Home() {
           </div>
 
           <div className={styles.text2_container}>
-            <p className={styles.text2_description}>Desarrollador de Software FullStack autodidacta. Especializado en Desarrollo Web y Móvil.</p>
+            <p className={styles.text2_description}>{t('secondText', { ns: 'home' })}</p>
           </div>
 
           <div className={styles.buttonsContainer}>
