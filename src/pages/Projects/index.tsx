@@ -1,13 +1,16 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ImageViewer from "react-simple-image-viewer";
-import { projects } from '../../data';
-import styles from './styles.module.css';
+import { useData } from '../../data';
 import github from '../../assets/icons/github.svg'
 import link from '../../assets/icons/link.svg'
-import { Link } from 'react-router-dom';
+import styles from './styles.module.css';
 
 export default function Projects () {
 
+  const projects = useData();
+  const { t } = useTranslation();
   const [photo, setPhoto] = useState('')
 
   const closeImageViewer = () => {
@@ -17,9 +20,8 @@ export default function Projects () {
   return (
     <div className={styles.main_container}>
 
-      <h2 className={styles.title}>Algunos proyectos <span style={{color: '#4282ad'}}> hechos por David</span></h2>
-      {/* <h2 className={styles.title}>Algunos proyectos hechos por David</h2> */}
-      <p className={styles.description}>Estos son algunos de las aplicaciones móviles y web que he desarrollado...</p>
+      <h2 className={styles.title}>{t('title.one', { ns: 'projects' })}<span style={{color: '#4282ad'}}>{t('title.two', { ns: 'projects' })}</span></h2>
+      <p className={styles.description}>{t('description', { ns: 'projects' })}</p>
 
       <div className={styles['grid-container']}>
         {

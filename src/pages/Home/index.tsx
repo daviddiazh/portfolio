@@ -1,9 +1,9 @@
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Typewriter from 'typewriter-effect';
 import Avatar from '../../assets/images/ddh-img.png';
 import styles from './styles.module.css'
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
 

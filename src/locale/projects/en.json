@@ -1,0 +1,39 @@
+{
+    "title": {
+        "one": "Here are some of the ",
+        "two": "projects I have developed."
+    },
+    "description": "These are some of the mobile and web projects I've worked on, including replicas of well-known platforms and applications built from scratch. Each project demonstrates my attention to detail and passion for solving problems through technology, always aiming to deliver intuitive and functional user experiences.",
+    "mercadolibre": {
+        "web": {
+            "title": "Mercado Libre Web Clone",
+            "description": "I developed an exact replica of the Mercado Libre website, where users can search for products, list them, and view their details."
+        },
+        "mobile": {
+            "title": "Mercado Libre Mobile Clone",
+            "description": "I created an exact replica of the Mercado Libre mobile app, allowing users to search for products, list them, and view their details."
+        }
+    },
+    "instagram": {
+        "mobile": {
+            "title": "Instagram Mobile Clone",
+            "description": "I created a replica of the Instagram mobile app, where users can simulate login, view stories, posts, and profiles."
+        }
+    },
+    "artwork": {
+        "title": "Beatriz's Art",
+        "description": "I developed a website for a Colombian artist where users can explore her artwork, learn more about her, and access her contact information."
+    },
+    "arrendamientos_alvarez": {
+        "title": "Arrendamientos Álvarez",
+        "description": "I designed a website for a real estate agency in Medellín, enabling users to view properties, filter them, and access the PSE portal for payments."
+    },
+    "selvatica": {
+        "title": "Selvática",
+        "description": "I developed a simulation of a coffee e-commerce platform where users can browse products, add them to the shopping cart, and see the checkout page."
+    },
+    "blackjack": {
+        "title": "Blackjack Game",
+        "description": "I created a blackjack game to test my programming skills and have fun at the same time."
+    }
+}

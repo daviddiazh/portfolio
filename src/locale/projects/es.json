@@ -1,0 +1,39 @@
+{
+    "title": {
+        "one": "Aquí encontrarás algunos de los ",
+        "two": "proyectos que he desarrollado."
+    },
+    "description": "Estos son algunos de los proyectos móviles y web que he creado, destacando réplicas de plataformas reconocidas y aplicaciones diseñadas desde cero. Cada proyecto refleja mi dedicación al detalle y mi pasión por resolver problemas con tecnología, buscando siempre brindar experiencias intuitivas y funcionales para los usuarios.",
+    "mercadolibre": {
+        "web": {
+            "title": "Clon de Mercado Libre Web",
+            "description": "Desarrollé una réplica de la página web de Mercado Libre, donde es posible buscar productos, listarlos y visualizar sus detalles."
+        },
+        "mobile": {
+            "title": "Clon de Mercado Libre Móvil",
+            "description": "Creé una réplica de la aplicación móvil de Mercado Libre, que permite buscar productos, listarlos y ver sus detalles."
+        }
+    },
+    "instagram": {
+        "mobile": {
+            "title": "Clon de Instagram Móvil",
+            "description": "Realicé una réplica de la aplicación móvil de Instagram, donde se simula el inicio de sesión y se pueden ver historias, publicaciones y perfiles."
+        }
+    },
+    "artwork": {
+        "title": "Beatriz's Art",
+        "description": "Desarrollé un sitio web para una artista colombiana donde es posible explorar sus obras de arte, conocer sobre ella y acceder a su información."
+    },
+    "arrendamientos_alvarez": {
+        "title": "Arrendamientos Álvarez",
+        "description": "Diseñé un sitio web para una inmobiliaria de Medellín que permite ver propiedades, filtrarlas y acceder al portal de PSE para realizar pagos."
+    },
+    "selvatica": {
+        "title": "Selvática",
+        "description": "Desarrollé una simulación de un e-commerce de café que permite explorar productos, agregarlos al carrito de compras y simular el checkout."
+    },
+    "blackjack": {
+        "title": "Juego de Blackjack",
+        "description": "Creé un juego de blackjack para poner a prueba mis conocimientos en programación y divertirme al mismo tiempo."
+    }
+}
