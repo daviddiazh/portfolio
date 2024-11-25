@@ -31,12 +31,12 @@ export default function Projects () {
               <div className={styles['content-card']}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <h4 className={styles.name}>{project.name}</h4>
-                  <div style={{ display: 'flex', gap: 10 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                     <Link to={project.repository} target='_blank'>
                       <img src={github} alt='GitHub icon' width={15} className={styles.icon} />
                     </Link>
                     <Link to={project.link} target='_blank'>
-                      <img src={link} alt='Link icon' width={13} className={styles.icon} />
+                      <img src={link} alt='Link icon' width={14} className={styles.icon} />
                     </Link>
                   </div>
                 </div>
