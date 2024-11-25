@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import openMenuIcon from '../../assets/icons/open-menu.svg';
 import closeMenuIcon from '../../assets/icons/close-menu.svg';
 import styles from './styles.module.css';
+import { Locale } from '../Locale';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
 
   const [ isOpenMenu, setOpenMenu ] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => setOpenMenu(!isOpenMenu);
 
@@ -16,9 +19,10 @@ export const Navbar = () => {
         <Link onClick={() => setOpenMenu(false)} to='/'><h1 className={styles.title}>David Diaz.</h1></Link>
 
         <div className={styles.links_container}>
-          <Link className={styles.link} to='/'>Inicio</Link>
-          <Link className={styles.link} to='/projects'>Proyectos</Link>
-          <Link className={styles.link} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>Contácto</Link>
+          <Link className={styles.link} to='/'>{t('nav.home', { ns: 'header' })}</Link>
+          <Link className={styles.link} to='/projects'>{t('nav.projects', { ns: 'header' })}</Link>
+          <Link className={styles.link} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>{t('nav.contact', { ns: 'header' })}</Link>
+          <Locale />
         </div>
 
         {
@@ -32,9 +36,9 @@ export const Navbar = () => {
           isOpenMenu
           ? (
             <div className={styles.links_container_mobile}>
-              <Link onClick={toggleMenu} className={styles.link_mobile} to='/'>Inicio</Link>
-              <Link onClick={toggleMenu} className={styles.link_mobile} to='/projects'>Proyectos</Link>
-              <Link onClick={toggleMenu} className={styles.link_mobile} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>Contácto</Link>
+              <Link onClick={toggleMenu} className={styles.link_mobile} to='/'>{t('nav.home', { ns: 'header' })}</Link>
+              <Link onClick={toggleMenu} className={styles.link_mobile} to='/projects'>{t('nav.projects', { ns: 'header' })}</Link>
+              <Link onClick={toggleMenu} className={styles.link_mobile} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>{t('nav.contact', { ns: 'header' })}</Link>
             </div>
           ) : null
         }

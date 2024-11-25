@@ -1,0 +1,14 @@
+{
+  "Typewriter": {
+    "one": "Hey, I'm David",
+    "two": "from Medellín, Colombia"
+  },
+  "mainText": {
+    "building": "Building",
+    "socialImpact": " social impact",
+    "complement": " quality software generating a great "
+  },
+  "secondText": "Self-taught FullStack Software Developer, specialized in Web and Mobile Development.",
+  "connectWithMe": "Connect with me",
+  "seeProjects": "See my projects"
+}
