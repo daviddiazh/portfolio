@@ -56,12 +56,12 @@ export default function Home() {
           <div className={styles.buttonsContainer}>
             <Link to='/projects' className={styles.avatar_container}>
               <button className={styles['contact-button']}>
-                Ver proyectos
+                {t('seeProjects', { ns: 'home' })}
               </button>
             </Link>
 
             <a href="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank' className={styles.avatar_container}>
-              <button className={styles['project-button']}>Conecta conmigo</button>
+              <button className={styles['project-button']}>{t('connectWithMe', { ns: 'home' })}</button>
             </a>
           </div>
         </div>
