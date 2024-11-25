@@ -37,7 +37,7 @@
     /* color: #4282ad; */
     color: #fff;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .description {
@@ -49,6 +49,14 @@
 .content-card {
     padding: 10px 15px;
     padding-bottom: 20px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.image {
+    cursor: pointer;
 }
 
 @media (min-width: 495px) {

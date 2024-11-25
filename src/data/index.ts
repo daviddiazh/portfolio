@@ -44,16 +44,16 @@ export const projects = [
         repository: ''
     },
     {
-        id: 3,
-        name: 'Juego de Blackjack',
+        id: 4,
+        name: 'Arrendamientos Alvarez',
         description: 'Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.',
         link: '',
         tags: [],
-        image: blackjack,
+        image: arrendamientosalvarez,
         repository: ''
     },
     {
-        id: 3,
+        id: 5,
         name: 'Selvática',
         description: 'Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.',
         link: '',
@@ -62,12 +62,12 @@ export const projects = [
         repository: ''
     },
     {
-        id: 3,
-        name: 'Arrendamientos Alvarez',
+        id: 6,
+        name: 'Juego de Blackjack',
         description: 'Desarrollé una copia exacta de la página web de Mercado Libre, con el fin de poner en práctica mis conocimientos.',
         link: '',
         tags: [],
-        image: arrendamientosalvarez,
+        image: blackjack,
         repository: ''
     },
 ];
