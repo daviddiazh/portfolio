@@ -4,7 +4,6 @@ import { projects } from '../../data';
 import styles from './styles.module.css';
 import github from '../../assets/icons/github.svg'
 import link from '../../assets/icons/link.svg'
-import close from '../../assets/icons/close-menu.svg'
 import { Link } from 'react-router-dom';
 
 export default function Projects () {
