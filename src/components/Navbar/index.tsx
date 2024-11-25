@@ -18,18 +18,24 @@ export const Navbar = () => {
       <div className={styles.main_container}>
         <Link onClick={() => setOpenMenu(false)} to='/'><h1 className={styles.title}>David Diaz.</h1></Link>
 
-        <div className={styles.links_container}>
-          <Link className={styles.link} to='/'>{t('nav.home', { ns: 'header' })}</Link>
-          <Link className={styles.link} to='/projects'>{t('nav.projects', { ns: 'header' })}</Link>
-          <Link className={styles.link} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>{t('nav.contact', { ns: 'header' })}</Link>
-          <Locale />
-        </div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div className={styles.links_container}>
+            <Link className={styles.link} to='/'>{t('nav.home', { ns: 'header' })}</Link>
+            <Link className={styles.link} to='/projects'>{t('nav.projects', { ns: 'header' })}</Link>
+            <Link className={styles.link} to="https://www.linkedin.com/in/david-diaz-herrera-2777ba1a8/" target='_blank'>{t('nav.contact', { ns: 'header' })}</Link>
+          </div>
 
-        {
-          isOpenMenu
-          ? <img src={closeMenuIcon} alt="Cerrar menu, icono" className={styles.close_menu_icon} onClick={toggleMenu} />
-          : <img src={openMenuIcon} alt="Abrir menu, icono" className={styles.open_menu_icon} onClick={toggleMenu} />
-        }
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            {
+              isOpenMenu
+              ? <img src={closeMenuIcon} alt="Cerrar menu, icono" className={styles.close_menu_icon} onClick={toggleMenu} />
+              : <img src={openMenuIcon} alt="Abrir menu, icono" className={styles.open_menu_icon} onClick={toggleMenu} />
+            }
+            <div className={styles.locale}>
+              <Locale />
+            </div>
+          </div>
+        </div>
       </div>
       <div>
         {

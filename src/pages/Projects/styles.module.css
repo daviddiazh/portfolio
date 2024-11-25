@@ -1,6 +1,5 @@
 .main_container {
     width: 100%;
-    /* height: 100%; */
     height: min(100% - 65px);
     padding: 0;
 }
@@ -21,7 +20,7 @@
 .grid-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));
     grid-gap: 30px;
     margin-top: 55px;
     margin-bottom: 100px;
@@ -31,8 +30,6 @@
     border-radius: 13px;
     box-shadow: -1px 3px 10px rgba(23, 23, 23, 0.2);
     margin: 2px;
-    /* background-color: #363636; */
-    /* background-color: #1a1919; */
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -73,7 +70,7 @@
       
     .image {
         width: 100%;
-        height: 250px;
+        height: 220px;
         object-fit: fill;
         padding: 0;
         margin: 0;
@@ -85,7 +82,7 @@
     .grid-container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem)));
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem)));
         grid-gap: 60px;
     }
 }

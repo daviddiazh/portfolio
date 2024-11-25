@@ -32,6 +32,10 @@
     display: block;
     cursor: pointer;
 }
+
+.locale {
+    padding-left: 10px;
+}
 /* ----------------- Mobile Ended ----------------- */
 
 
@@ -65,6 +69,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .locale {
+        display: block;
     }
 }
 
@@ -121,6 +128,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .locale {
+        padding-left: 50px;
     }
 }
 /* ----------------- Tablet or Desktop Ended ----------------- */
